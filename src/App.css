@@ -8,6 +8,27 @@
 .app-header {
   padding: 20px 32px;
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  color: var(--text-muted);
+  background: transparent;
+  transition: background 0.15s, color 0.15s;
+}
+
+.github-link:hover {
+  background: var(--surface-2);
+  color: var(--text-strong);
 }
 
 .app-header h1 {
