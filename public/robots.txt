@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ovogmap.github.io/animation-playground/sitemap.xml
