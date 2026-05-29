@@ -80,19 +80,3 @@ npm run dev
 ```bash
 npm run build
 ```
-
----
-
-## 기술 스택
-
-- [Vite](https://vitejs.dev/) + [React 19](https://react.dev/) + TypeScript
-- 순수 CSS transition + `cubic-bezier` (애니메이션 라이브러리 미사용)
-- 베지어 그래프는 SVG 로 직접 구현 (외부 의존성 없음)
-- GitHub Actions + GitHub Pages 자동 배포
-
----
-
-## 기여
-
-버그 제보 · 기능 제안 · PR 모두 환영합니다.
-[이슈 등록하기](https://github.com/ovogmap/animation-playground/issues)
