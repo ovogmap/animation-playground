@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1115" />
+      <stop offset="100%" stop-color="#1a1f2e" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c8aff" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#7c8aff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#7c8aff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="900" cy="180" r="280" fill="url(#glow)" />
+  <circle cx="240" cy="500" r="240" fill="url(#glow)" opacity="0.6" />
+
+  <!-- Grid pattern -->
+  <g opacity="0.08" stroke="#7c8aff" stroke-width="1">
+    <line x1="0" y1="158" x2="1200" y2="158" />
+    <line x1="0" y1="315" x2="1200" y2="315" />
+    <line x1="0" y1="473" x2="1200" y2="473" />
+    <line x1="300" y1="0" x2="300" y2="630" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="900" y1="0" x2="900" y2="630" />
+  </g>
+
+  <!-- Bezier curve visual (centered, large) -->
+  <g transform="translate(820, 130)">
+    <!-- Bounding box -->
+    <rect x="0" y="0" width="280" height="280" fill="none" stroke="#2a2e38" stroke-width="1.5" rx="8" />
+
+    <!-- Baseline / topline -->
+    <line x1="0" y1="280" x2="280" y2="280" stroke="#3a3e4a" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="0" y1="0" x2="280" y2="0" stroke="#3a3e4a" stroke-width="1" stroke-dasharray="4 4" />
+
+    <!-- Handle lines -->
+    <line x1="0" y1="280" x2="70" y2="80" stroke="#8b91a0" stroke-width="1" stroke-dasharray="3 3" opacity="0.6" />
+    <line x1="280" y1="0" x2="200" y2="220" stroke="#8b91a0" stroke-width="1" stroke-dasharray="3 3" opacity="0.6" />
+
+    <!-- Curve -->
+    <path d="M 0 280 C 70 80, 200 220, 280 0" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Endpoints -->
+    <circle cx="0" cy="280" r="5" fill="#8b91a0" />
+    <circle cx="280" cy="0" r="5" fill="#8b91a0" />
+
+    <!-- Handles -->
+    <circle cx="70" cy="80" r="10" fill="#7c8aff" stroke="white" stroke-width="2.5" />
+    <circle cx="200" cy="220" r="10" fill="#a78bfa" stroke="white" stroke-width="2.5" />
+  </g>
+
+  <!-- Text block (left) -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Segoe UI', Roboto, sans-serif">
+    <!-- Eyebrow -->
+    <text x="80" y="180" fill="#7c8aff" font-size="22" font-weight="600" letter-spacing="4">
+      DESIGN SYSTEM · MOTION TOKEN
+    </text>
+
+    <!-- Title -->
+    <text x="80" y="260" fill="#f5f7fa" font-size="78" font-weight="700" letter-spacing="-2">
+      Animation
+    </text>
+    <text x="80" y="340" fill="#f5f7fa" font-size="78" font-weight="700" letter-spacing="-2">
+      Playground
+    </text>
+
+    <!-- Subtitle -->
+    <text x="80" y="410" fill="#d1d5db" font-size="26" font-weight="400">
+      베지어 곡선 &amp; duration 으로
+    </text>
+    <text x="80" y="446" fill="#d1d5db" font-size="26" font-weight="400">
+      등장 · 퇴장 애니메이션을 시각적으로
+    </text>
+
+    <!-- Tag chips -->
+    <g transform="translate(80, 500)">
+      <rect x="0" y="0" width="118" height="36" rx="18" fill="#20242d" stroke="#2a2e38" />
+      <text x="59" y="24" fill="#d1d5db" font-size="14" font-family="ui-monospace, 'SF Mono', Consolas, monospace" text-anchor="middle">cubic-bezier</text>
+
+      <rect x="130" y="0" width="78" height="36" rx="18" fill="#20242d" stroke="#2a2e38" />
+      <text x="169" y="24" fill="#d1d5db" font-size="14" font-family="ui-monospace, 'SF Mono', Consolas, monospace" text-anchor="middle">duration</text>
+
+      <rect x="220" y="0" width="62" height="36" rx="18" fill="#20242d" stroke="#2a2e38" />
+      <text x="251" y="24" fill="#d1d5db" font-size="14" font-family="ui-monospace, 'SF Mono', Consolas, monospace" text-anchor="middle">modal</text>
+
+      <rect x="294" y="0" width="98" height="36" rx="18" fill="#20242d" stroke="#2a2e38" />
+      <text x="343" y="24" fill="#d1d5db" font-size="14" font-family="ui-monospace, 'SF Mono', Consolas, monospace" text-anchor="middle">dropdown</text>
+    </g>
+
+    <!-- URL footer -->
+    <text x="80" y="590" fill="#8b91a0" font-size="16" font-family="ui-monospace, 'SF Mono', Consolas, monospace">
+      ovogmap.github.io/animation-playground
+    </text>
+  </g>
+</svg>
